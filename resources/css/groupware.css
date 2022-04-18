@@ -1,0 +1,28 @@
+.groupware {
+    background-color: #f5f5f9;
+}
+
+.gw-sidebar {
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.375rem 0 rgb(161 172 184 / 12%);
+    width: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    bottom: 0;
+}
+
+.gw-company-name {
+    font-weight: 600;
+}
+
+.gw-menu-item {
+    display: block;
+    padding: 1.1rem;
+}
+
+.gw-page {
+    padding-left: 16.25rem;
+}

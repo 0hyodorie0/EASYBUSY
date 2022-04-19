@@ -8,6 +8,7 @@
     <title>Groupware</title>
 
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/groupware.css">
     <!-- Page CSS -->
@@ -19,44 +20,173 @@
 
     <div class="gw-wrapper">
         <aside class="gw-sidebar">
-            <div class="gw-brand">
+            <div class="text-center m-5 gw-brand">
                 <a href="" class="gw-logo-img"></a>
-                <a href="" class="gw-company-name">COMPANY NAME</a>
+                <a href="" class="gw-company-name">EZBZ</a>
             </div>
-            <ul class="gw-menu">
-                <li>
-                    <a href="" class="gw-menu-item">근무형태</a>
-                </li>
-                <li>
-                    <a href="" class="gw-menu-item">메일</a>
-                </li>
-                <li>
-                    <a href="" class="gw-menu-item">워크플로우</a>
-                </li>
-                <li>
-                    <a href="" class="gw-menu-item">웍스</a>
-                </li>
-                <li>
-                    <a href="" class="gw-menu-item">일정</a>
-                </li>
-                <li>
-                    <a href="" class="gw-menu-item">게시판</a>
-                </li>
-            </ul>
+            <div id="accordion">
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse1">
+                        <i class="fa-solid fa-briefcase"></i> 근무 형태
+                    </a>
+                    <div id="collapse1" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">출퇴근 지정</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">출퇴근 확인</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">유연 근무</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse2">
+                        <i class="fa-regular fa-envelope"></i> 메일
+                    </a>
+                    <div id="collapse2" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">메일 목록</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">메일 쓰기</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">메일 확인</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">주소록</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse3">
+                        <i class="fa-regular fa-file-word"></i> 워크 플로우
+                    </a>
+                    <div id="collapse3" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">작성</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">내문서함</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse4">
+                        <i class="fa-solid fa-bars-progress"></i> 웍스
+                    </a>
+                    <div id="collapse4" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">공용</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">개인</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse5">
+                        <i class="fa-regular fa-calendar-check"></i> 일정
+                    </a>
+                    <div id="collapse5" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">개인 일정</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">부서 일정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse6">
+                        <i class="fa-solid fa-list-ul"></i> 게시판
+                    </a>
+                    <div id="collapse6" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">공지사항</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">뉴스피드</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">경조사</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse7">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> 자료실
+                    </a>
+                    <div id="collapse7" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">개인 자료실</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">부서 자료실</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">전체 자료실</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-1">
+                    <a class="gw-menu-list btn" data-bs-toggle="collapse" href="#collapse8">
+                        <i class="fa-solid fa-gear"></i> 시스템 관리
+                    </a>
+                    <div id="collapse8" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">직원 계정 관리</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">근무 형태 관리</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">워크 플로우 관리</a></li>
+                                <li class="gw-menu"><a href="#" class="gw-menu-item">외부 IP 관리</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
         <section class="gw-page">
-            <nav>
-                <form action="">
-                    <input type="search" name="" id="">
-                    <input type="submit" value="검색">
-                </form>
-            </nav>
+            <div class="gw-page-wrapper">
+                <nav class="justify-content-between align-items-center gw-box gw-nav px-4">
+                    <form action="" class="nav-search">
+                        <i class="fa-solid fa-magnifying-glass"> </i><input type="search" placeholder="Search.." name="" id="">
+                    </form>
+                    <div class="d-flex  gw-nav-user">
+                        <a href="">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </nav>
+                <div class="d-flex flex-wrap row gw-main-cont">
+                    <div class="col-8">
+                        <div class="gw-box">
+                            <h3 class="gw-box-title"><a class="d-block" href="">일정</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="gw-box">
+                            <h3 class="gw-box-title"><a class="d-block" href="">공지사항</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap row gw-main-cont">
+                    <div class="col-4">
+                        <div class="gw-box">
+                            <h3 class="gw-box-title"><a class="d-block" href="">뉴스피드</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="gw-box">
+                            <h3 class="gw-box-title"><a class="d-block" href="">웍스</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer></footer>
         </section>
     </div>
     <!-- 공통 끝 -->
 
     <script src="../resources/js/jquery-3.6.0.min.js"></script>
     <script src="../resources/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../resources/js/main.js"></script>
 </body>
 
 </html>

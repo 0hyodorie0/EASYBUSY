@@ -1,4 +1,5 @@
 $(function() {
+
     $('.gw-menu-list').on('click', function() {
         $('.gw-menu-list').removeClass('active');
         if ($(this).hasClass('active')) {

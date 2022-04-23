@@ -8,6 +8,7 @@
     <title>Groupware</title>
 
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/lib/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/groupware.css">
@@ -175,6 +176,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="span5 col-md-5" id="sandbox-container"><input type="text" class="form-control"></div>
             </div>
             <footer></footer>
         </section>
@@ -182,9 +184,15 @@
     <!-- 공통 끝 -->
 
     <script src="../resources/js/jquery-3.6.0.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
     <script src="../resources/js/bootstrap.bundle.min.js"></script>
 
     <script src="../resources/js/main.js"></script>
+    <script>
+        $('#sandbox-container input').datepicker({
+            language: "ko"
+        });
+    </script>
 </body>
 
 </html>
